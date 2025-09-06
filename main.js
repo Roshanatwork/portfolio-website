@@ -28,9 +28,9 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 /* SCROLL REVEAL ANIMATION */
 const sr = ScrollReveal({
   origin: "top",
-  distance: "80px",
-  duration: 2000,
-  reset: true,
+  distance: "50px", // Animation is less dramatic
+  duration: 1500, // Animation is faster
+  reset: false, // This is the key change: animations run only once
 });
 
 /* SCROLL HOME */
@@ -41,23 +41,24 @@ sr.reveal(".home__social-icon", { interval: 200 });
 
 /* SCROLL ABOUT */
 sr.reveal(".about__img", {});
-sr.reveal(".about__subtitle", { delay: 400 });
-sr.reveal(".about__text", { delay: 400 });
+sr.reveal(".about__subtitle", { delay: 200 });
+sr.reveal(".about__text", { delay: 200 });
 
 /* SCROLL SKILLS */
 sr.reveal(".skills__subtitle", {});
 sr.reveal(".skills__text", {});
-sr.reveal(".skills__data", { interval: 200 });
-sr.reveal(".skills__img", { delay: 600 });
+sr.reveal(".skills__data", { interval: 150 });
+sr.reveal(".skills__img", { delay: 400 });
 
 /* SCROLL PROJECTS */
-sr.reveal(".project__item", { interval: 200 });
+sr.reveal(".project__item", { interval: 150 });
 
 /* SCROLL CERTIFICATES */
-sr.reveal(".Certificates__img", { interval: 200 });
+sr.reveal(".Certificates__img", { interval: 150 });
 
 /* SCROLL HOBBIES */
-sr.reveal(".Hobbies__img", { interval: 200 });
+sr.reveal(".Hobbies__img", { interval: 150 });
 
 /* SCROLL CONTACT */
-sr.reveal(".contact__input", { interval: 200 });
+sr.reveal(".contact__input", { interval: 150 });
+
